@@ -1,0 +1,226 @@
+.custom-test {
+    color: green;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root {
+    --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    --text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.99);
+    --khaki: #b3a17d;
+    --black: #090909;
+    --cardinal: #c52233;
+    --pale-purple: #ffe2fe;
+    --office-green: #157f1f;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+
+
+
+section {
+    padding: 2rem 9%;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+    /* display: none; */
+}
+
+/* header .logo {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+} */
+
+/* header .logo i {
+    color: var(--green);
+} */
+
+header .navbar-custom a {
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    padding: .5rem 1.5rem;
+    color: var(--black);
+}
+
+header .navbar-custom a.active,
+header .navbar-custom a:hover {
+    color: #fff;
+    background: var(--office-green);
+}
+
+header .icons i,
+header .icons a {
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+
+header .icons a {
+    font-size: 2.5rem;
+}
+
+header .icons i:hover,
+header .icons a:hover {
+    color: #fff;
+    background: var(--office-green);
+    transform: rotate(360deg);
+}
+
+header .icons #menu-bars {
+    display: none;
+}
+
+#hero{
+    padding: 0;
+}
+
+.carousel-item img{
+    height: 100vh;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-caption {
+    top: 60%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  }
+
+.carousel-caption h5{
+    font-size: 35px;
+    text-shadow: var(--text-shadow);
+}
+
+.carousel-caption p{
+    font-size: 20px;
+    text-shadow: var(--text-shadow);
+}
+  
+
+/* ----------------------------------------------------------------------- */
+
+#our-services{
+    min-height: calc(100vh - 45px);
+    background-color: var(--khaki);
+}
+
+.pt-7{
+    padding-top: 7rem;
+}
+
+.card{
+    max-width: 25rem;
+}
+
+.card img{
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* media queries */
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header .icons #menu-bars {
+        display: inline-block;
+    }
+
+    header .navbar-custom {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+        border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar-custom.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar-custom a {
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+        text-align: center;
+    }
+
+    header .icons a {
+        display: none;
+    }
+}
+
+
+
+
+/* SCSS Gradient 
+$gradient-top: linear-gradient(0deg, #677183ff, #4C5361ff, #0D0E10ff, #2A2D34ff, #B3A17Dff, #424752ff);
+$gradient-right: linear-gradient(90deg, #677183ff, #4C5361ff, #0D0E10ff, #2A2D34ff, #B3A17Dff, #424752ff);
+$gradient-bottom: linear-gradient(180deg, #677183ff, #4C5361ff, #0D0E10ff, #2A2D34ff, #B3A17Dff, #424752ff);
+$gradient-left: linear-gradient(270deg, #677183ff, #4C5361ff, #0D0E10ff, #2A2D34ff, #B3A17Dff, #424752ff);
+$gradient-top-right: linear-gradient(45deg, #677183ff, #4C5361ff, #0D0E10ff, #2A2D34ff, #B3A17Dff, #424752ff);
+$gradient-bottom-right: linear-gradient(135deg, #677183ff, #4C5361ff, #0D0E10ff, #2A2D34ff, #B3A17Dff, #424752ff);
+$gradient-top-left: linear-gradient(225deg, #677183ff, #4C5361ff, #0D0E10ff, #2A2D34ff, #B3A17Dff, #424752ff);
+$gradient-bottom-left: linear-gradient(315deg, #677183ff, #4C5361ff, #0D0E10ff, #2A2D34ff, #B3A17Dff, #424752ff);
+$gradient-radial: radial-gradient(#677183ff, #4C5361ff, #0D0E10ff, #2A2D34ff, #B3A17Dff, #424752ff);
+*/
