@@ -51,7 +51,7 @@ span.carousel-control-prev-icon, span.carousel-control-next-icon {
     border-radius: 25px 25px 0 0 !important;
 }
 
-.our-services button{
+.our-services button, .latest-projects button{
     font-size: 15px!important;
 }
 
@@ -198,6 +198,12 @@ header .icons #menu-bars {
               0px 4px 8px rgba(21,127,31,0.5), 
               0px 8px 16px rgba(21,127,31,0.5);
               scale: 1.05;
+}
+
+/* ***************************************************** */
+
+.latest-projects .custom-border-1 img {
+    border-radius: 25px 0 0 25px !important;
 }
   
   @keyframes neon-glow {
