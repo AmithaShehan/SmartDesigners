@@ -22,7 +22,7 @@
   text-decoration: none;
   outline: none;
   border: none;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   transition: all 0.2s linear;
 }
 
@@ -178,7 +178,7 @@ header .icons #menu-bars {
   padding-top: 7rem;
 }
 
-.card img {
+.card img{
   width: 100%;
   background-size: cover;
   object-fit: cover;
@@ -240,7 +240,7 @@ header .icons #menu-bars {
 
 /*youtube*/
 
-.youtube .row {
+.youtube .row, .vision-mission .row {
   padding-left: 3rem;
   padding-right: 3rem;
 }
@@ -260,8 +260,48 @@ header .icons #menu-bars {
     margin-right: 5px;
   }
   
+/*------------------------------------------------About CSS--------------------------------------------------*/
 
-/* media queries */
+.our-story{
+  margin-top: 105px!important;
+}
+
+.our-story img {
+  width: 50%;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  padding: 0;
+  margin: 0 ;
+}
+
+.our-story--img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-story ul li::marker{
+  color: #157f1f;
+  font-size: 2.2rem;
+}
+
+.mission{
+  border-left: 1px solid var(--office-green);
+  border-right: 1px solid var(--office-green);
+}
+
+.what-we-do img{
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  padding: 0;
+  margin: 0 ;
+  max-height: 200px;
+}
+
+
+/* ---------------------------------------------media queries ------------------------------------------------*/
 @media (max-width: 991px) {
   html {
     font-size: 55%;
@@ -319,19 +359,13 @@ header .icons #menu-bars {
     border-top: none;
   }
 
-  .youtube .row {
+  .youtube .row, .vision-mission .row{
     padding-left: 0;
     padding-right: 0;
   }
+
+  .mission{
+    border-left: none;
+    border-right: none;
+  }
 }
-/* SCSS Gradient 
-$gradient-top: linear-gradient(0deg, #677183ff, #4C5361ff, #0D0E10ff, #2A2D34ff, #B3A17Dff, #424752ff);
-$gradient-right: linear-gradient(90deg, #677183ff, #4C5361ff, #0D0E10ff, #2A2D34ff, #B3A17Dff, #424752ff);
-$gradient-bottom: linear-gradient(180deg, #677183ff, #4C5361ff, #0D0E10ff, #2A2D34ff, #B3A17Dff, #424752ff);
-$gradient-left: linear-gradient(270deg, #677183ff, #4C5361ff, #0D0E10ff, #2A2D34ff, #B3A17Dff, #424752ff);
-$gradient-top-right: linear-gradient(45deg, #677183ff, #4C5361ff, #0D0E10ff, #2A2D34ff, #B3A17Dff, #424752ff);
-$gradient-bottom-right: linear-gradient(135deg, #677183ff, #4C5361ff, #0D0E10ff, #2A2D34ff, #B3A17Dff, #424752ff);
-$gradient-top-left: linear-gradient(225deg, #677183ff, #4C5361ff, #0D0E10ff, #2A2D34ff, #B3A17Dff, #424752ff);
-$gradient-bottom-left: linear-gradient(315deg, #677183ff, #4C5361ff, #0D0E10ff, #2A2D34ff, #B3A17Dff, #424752ff);
-$gradient-radial: radial-gradient(#677183ff, #4C5361ff, #0D0E10ff, #2A2D34ff, #B3A17Dff, #424752ff);
-*/
