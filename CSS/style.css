@@ -52,7 +52,8 @@ span.carousel-control-next-icon {
 } */
 
 .our-services button,
-.latest-projects button {
+.latest-projects button,
+.latest-blog-posts button {
   font-size: 15px !important;
 }
 
@@ -260,6 +261,7 @@ header .icons #menu-bars {
     margin-right: 5px;
   }
   
+
 /*------------------------------------------------About CSS--------------------------------------------------*/
 
 .our-story{
